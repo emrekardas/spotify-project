@@ -1,36 +1,37 @@
-attrs              21.4.0
-black              22.3.0
-certifi            2021.10.8
-charset-normalizer 2.0.12
-click              8.1.2
-colorama           0.4.4
-decorator          4.0.11
-Flask              2.0.2
-Flask-SQLAlchemy   2.5.1
-greenlet           1.1.2
-idna               3.3
-imageio            2.1.2
-InstagramAPI       1.0.2
-itsdangerous       2.1.2
-Jinja2             3.1.1
-MarkupSafe         2.1.1
-moviepy            0.2.3.2
-mypy               0.942
-mypy-extensions    0.4.3
-numpy              1.22.3
-pathspec           0.9.0
-Pillow             9.1.0
-platformdirs       2.5.2
-regex              2022.3.15
-requests           2.27.1
-requests-toolbelt  0.7.0
-six                1.16.0
-spotipy            2.19.0
-SQLAlchemy         1.4.35
-toml               0.10.2
-tomli              2.0.1
-tqdm               4.11.2
-typed-ast          1.5.3
-typing_extensions  4.2.0
-urllib3            1.26.9
-Werkzeug           2.1.1
+appdirs
+attrs
+black
+certifi       
+charset-normalizer 
+click
+colorama
+decorator
+Flask
+Flask-SQLAlchemy
+greenlet
+idna
+imageio
+InstagramAPI
+itsdangerous
+Jinja2
+MarkupSafe
+moviepy
+mypy
+mypy-extensions
+numpy
+pathspec
+Pillow
+platformdirs
+regex
+requests
+requests-toolbelt
+six
+spotipy
+SQLAlchemy
+toml
+tomli
+tqdm
+typed-ast
+typing_extensions
+urllib3
+Werkzeug
