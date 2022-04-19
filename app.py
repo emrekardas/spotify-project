@@ -7,7 +7,8 @@ from spotipy.oauth2 import SpotifyOAuth
 app = Flask(__name__)
 
 app.secret_key = "cOqrUR7Wtd"
-app.config['SESSION_COKKIE_NAME'] = 'Emre Cookie'
+app.config['SESSION_COKKIE_NAME'] = 'Emre Cookies'
+TOKEN_INFO = "token_info"
 
 @app.route('/')
 def login():
@@ -16,8 +17,13 @@ def login():
     return redirect(auth_url)
 
 @app.route('/redirect')
-def redirect():
-    return 'redirect'
+def redirectPage():
+    sp_oauth = create_spotify_oauth()
+    session.clear()
+    code = request.args.get('code')
+    token_info = sp_oauth.get_access_token(code)
+    session[TOKEN_INFO] = token_info
+    return redirect(url_for('getTracks', _external = True))
 
 @app.route('/getTracks')
 def getTracks():
