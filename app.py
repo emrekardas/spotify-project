@@ -27,6 +27,6 @@ def create_spotify_oauth():
     return SpotifyOAuth(
         client_id = "517cdd50fdde4800a8c0dfbd5d3e216a"
         client_secret = "e9d577ebc7d34a7f852211ec3dd31bec"
-        redirect_uri= = url_for('https://emrekardas.azurewebsites.net//redirect', _external = True)
+        redirect_uri= = url_for('https://emrekardas.azurewebsites.net/redirectPage', _external = True)
         scope = "user-library-read"
     )
